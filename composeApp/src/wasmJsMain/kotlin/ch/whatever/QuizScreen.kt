@@ -1,6 +1,5 @@
 package ch.whatever
 
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -40,7 +39,9 @@ class QuizPresenter(
 
 @CircuitInject(QuizScreen::class, AppScope::class)
 @Composable
-fun QuizScreen(state: QuizScreen.State, modifier: Modifier = Modifier) {
+fun QuizView(state: QuizScreen.State, modifier: Modifier = Modifier) {
+    // TODO AsyncImage in QuizView relevant
+    //Text("quiz")
     repeat(20) {
         AsyncImage(
             modifier = Modifier,
